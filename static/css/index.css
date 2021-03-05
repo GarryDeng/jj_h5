@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.page_bg{
+    display: block;
+    width: 7.5rem;;
+}
+.tran-flex-centent{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,.45);
+    z-index: 99;
+    overflow: hidden;
+    width: 100%;
+}
+.tran-flex-centent .centent{
+    width: 5.67rem;
+    background-color: #FFF;
+    border-radius: .15rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.tran-flex-centent .title{
+    height: 1rem;
+    line-height: .98rem;
+    background: url(../images/line1.png) no-repeat left bottom;
+    background-size: 100% auto;
+    text-align: center;
+    font-size: .34rem;
+    color: #040404;
+}
+.tran-flex-centent .access{
+    width: 4.53rem;
+    margin: 0 auto;
+    /* margin-top: .9rem; */
+    margin-top: .3rem;
+    font-size: .3rem;
+    color: #040404;
+    height: 1rem;
+    line-height: .98rem;
+    background: url(../images/line_02.png) no-repeat left bottom;
+    background-size: 100% auto;
+}
+.tran-flex-centent .message{
+    position: relative;
+    width: 4.53rem;
+    margin: 0 auto;
+    line-height: 1.18rem;
+    font-size: .28rem;
+    color: #878787;
+    padding-left: .3rem;
+    overflow: hidden;
+}
+.tran-flex-centent .message::after{
+    content: "";
+    width: .09rem;
+    height: .09rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: .54rem;
+    background-color: #878787;
+    z-index: 9;
+}
+.tran-flex-centent .button{
+    line-height: .88rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #189621;
+    background: url(../images/line_03.png) no-repeat left top;
+    background-size: 100% auto;
+    width: 100%;
+    border: none;
+    outline: none;
+    display: block;
+}

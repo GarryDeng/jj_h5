@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width, initial-scale=1.0">
+    <title>安全出行</title>
+    <script>
+        function rem() {
+            var html = document.documentElement;
+            html.style.fontSize = html.clientWidth / 7.5 + 'px';
+        }
+        rem()
+        window.addEventListener('resize',rem, false);
+    </script>
+    <link rel="stylesheet" href="/static/css/content.css">
+    <script src="/static/js/jquery.min.js"></script>
+</head>
+<body>
+    <img class="bg" src="/static/images/head_bg.png" alt="">
+
+
+    <!-- 有违规记录 -->
+    <div class="name-history">
+        <div class="title">11月猎狐整治行动——不带头盔行为</div>
+        <div class="hello">您好  杨晓华</div>
+        <div class="history">您的<span>交通违法行为</span>已被记录</div>
+        <div class="down-button">
+            <img src="/static/images/down.png" alt="">
+            <span>保存分享朋友圈</span>
+        </div>
+    </div>
+    <div class="history-list">
+        <div class="title">
+            违规记录(<span>2次</span>)
+        </div>
+        <div class="list-content">
+            <div class="left">
+                <div class="active">猎狐整治行动</div>
+                <div class="time">2020年10月10日  12:02</div>
+            </div>
+            <div class="right">不带头盔</div>
+        </div>
+
+        <div class="list-content">
+            <div class="left">
+                <div class="active">猎狐整治行动</div>
+                <div class="time">2020年10月10日  12:02</div>
+            </div>
+            <div class="right">不带头盔</div>
+        </div>
+
+        <div class="list-content">
+            <div class="left">
+                <div class="active">猎狐整治行动</div>
+                <div class="time">2020年10月10日  12:02</div>
+            </div>
+            <div class="right">不带头盔</div>
+        </div>
+    </div>
+    <div style="display: none;" class="fixed-content-img">
+        <div class="content-img">
+            <div class="head-content">
+                <div class="head-user-content">
+                    <img class="user-bg" src="/static/images/share_bg.png" alt="">
+                    <img class="head-user" src="/static/images/head_bg.png" alt="用户头像">
+                    <div class="name">Amy艾米</div>
+                    <div class="content">2020年10月20日120，我<span>末佩头盔</span>被交警同志批评教育，希望大家要引 以为戒，以后驾驶摩电一定要戴头盔 请相互转告 </div>
+                </div>
+                <div class="hint">长按保存到相册，分享朋友圈</div>
+            </div>
+            <img class="close-img" src="/static/images/close.png" alt="">
+        </div>
+    </div>
+    <!-- 有违规记录 -->
+
+    <!-- 没有违规技术 -->
+    <div class="name-history">
+        <div class="hello" style="padding-top: .44rem;padding-bottom: .27rem;">您好  杨晓华</div>
+        <div class="history">欢迎使用增城交警出行小程序</div>
+    </div>
+   
+    <div class="history-list">
+        <div class="title">
+            违规记录(<span>0次</span>)
+        </div>
+        <div class="not-data">
+            <img src="/static/images/not_data.png" alt="">
+            <div class="hint">暂时没有违法记录哦 ！ 继续保持哟</div>
+        </div>
+    </div>
+    <!-- 没有违规技术 -->
+
+</body>
+<script>
+    $(".name-history .down-button").on('click', function() {
+        $(".fixed-content-img").show(0);
+    })
+    $(".fixed-content-img .close-img").on('click', function () {
+        $(".fixed-content-img").hide(0);
+    })
+</script>
+</html>

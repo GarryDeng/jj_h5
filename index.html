@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width, initial-scale=1.0">
+    <title>安全出行</title>
+    <script>
+        function rem() {
+            var html = document.documentElement;
+            html.style.fontSize = html.clientWidth / 7.5 + 'px';
+        }
+        rem()
+        window.addEventListener('resize',rem, false);
+    </script>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <div>
+        <img class="page_bg" src="/static/images/page_bg_01.png" alt="">
+    </div>
+    <div class="tran-flex-centent">
+        <div class="centent">
+            <div class="title">微信授权</div>
+            <div class="access">增城交警申请获取以下权限：</div>
+            <div class="message">获得你的公开信息(昵称、头像)</div>
+            <button class="button">确认获取个人信息</button>
+        </div>
+    </div>
+</body>
+
+</html>
